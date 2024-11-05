@@ -63,14 +63,14 @@
                 const button = document.getElementById('myButton'); // Замените 'myButton' на ID вашей кнопки
 
                 // Проверяем, была ли кнопка уже нажата
-                if (localStorage.getItem('buttonClicked') === 'true') {
+                if (localStorage.getItem('buttonClicked2') === 'true') {
                 // Если да, скрываем кнопку
                 button.style.display = 'none';
                 } else {
                 // Если нет, добавляем обработчик события клика
                 button.addEventListener('click', () => {
                     // Отмечаем, что кнопка была нажата в localStorage
-                    localStorage.setItem('buttonClicked', 'true');
+                    localStorage.setItem('buttonClicked2', 'true');
 
                     // Скрываем кнопку
                     button.style.display = 'none';
